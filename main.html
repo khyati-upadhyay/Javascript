@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <form id="addStudentForm">
+        <h2>Student Application</h2>
+        <label>Name:</label>
+        <input type="text" id="name" required />
+        <label>City:</label>
+        <input type="text" id="city" required />
+        <label>Fees:</label>
+        <input type="number" id="fees" required />
+        <button type="submit" onclick="statistics()">Add</button>
+      </form>
+  
+      <form id="editStudentForm">
+        <h2>Student Application</h2>
+        <label>Name:</label>
+        <input type="text" id="editName" required />
+        <label>City:</label>
+        <input type="text" id="editCity" required />
+        <label>Fees:</label>
+        <input type="number" id="editFees" required />
+        <button type="submit">Save</button>
+        <button type="button" id="cancelEditButton">Cancel</button>
+      </form>
+      
+      <br> <br>
+
+      <table id="studentsTable" border="2">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Fees</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <br><br>
+
+      <h2 class="statics">Statistics</h2>
+
+      <div>Total Fees: &nbsp; <label id="totalFees"></label></div>
+
+      <div>Total Number of students: &nbsp; <label id="totalStudents"></label></div>
+
+      <div>Total Number of students whose name starts from 'R': &nbsp; <label id="nameWithR"></label></div>
+
+      <div>City of 4th student: &nbsp; <label id="cityOfFourthStudent"></label></div>
+
+      <div>Total fees of 3rd and 5th student: &nbsp; <label id="totalOfThirdAndFifth"></label></div>
+
+      <div>Number of students whoose fees is in between $2000 and $3900: &nbsp; <label id="betweenTwoAndThreeThousand"></label> </div>
+
+      <div>Number of students whoose fees is less than $1000: &nbsp; <label id="lessThanThousand"></label></div>
+
+      <div>Number of students whoose name starts from 'S' and city name starts from "Ch": &nbsp; <label id="SAndCh"></label></div>
+
+      <div>Number of students whoose name starts from 'J' OR city name starts from "H": &nbsp; <label id="JAndH"></label></div>
+
+      <div>Min and Max fees: &nbsp; <label id="minMax"></label></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
